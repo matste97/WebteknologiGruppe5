@@ -53,5 +53,6 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #ad2020;
+    background-color: #5A5A5A
+    ;
 }
