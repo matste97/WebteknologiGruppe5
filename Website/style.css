@@ -59,6 +59,10 @@ body {
     opacity: 1;
 } */
 
+.productimage {
+    width: 300px;
+    height: 300px;
+  }
 
 .navbar .btnLogin-popup {
     position: relative;
