@@ -12,109 +12,132 @@
 
 <body>
 
-    <header class="header">
-        <a href="" class="logo"><i class='bx bxs-component' ></i>CGG</a>
+<header class="header">
+    <a href="" class="logo"><i class='bx bxs-component' ></i>CGG</a>
 
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact</a>
-            <a href="#"><i class='bx bxs-cart'></i></a>
-            <button class="btnLogin-popup">Login</button>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a href="#"><i class='bx bxs-cart'></i></a>
+        <button class="btnLogin-popup">Login</button>
+    </nav>
+</header>
 
-    <section class="section">
-        <div class="wrapper">
+<section class="section">
+
+</section>
+
+
+<div class="container">
+    <link rel="stylesheet" href="contact.css">
+    <h1>Contact Us</h1>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+
+<section class="section">
+    <div class="wrapper">
             <span class="icon-close">
                 <i class='bx bx-x'></i>
             </span>
 
-            <div class="logreg-box">
-                <!-- login form -->
-                <div class="form-box login">
-                    <div class="logreg-title">
-                        <h2>Login</h2>
-                        <p>Please login to use the platform</p>
-                    </div>
-
-                    <form action="#">
-                        <div class="input-box">
-                            <span class="icon"><i class='bx bxs-envelope'></i></span>
-                            <input type="email" required>
-                            <label>Email</label>
-                        </div>
-
-                        <div class="input-box">
-                            <span class="icon"><i class='bx bxs-lock-alt'></i></span>
-                            <input type="password" required>
-                            <label>Password</label>
-                        </div>
-
-                        <div class="remember-forgot">
-                            <label><input type="checkbox"> Remember me</label>
-                            <a href="#">Forgot password?</a>
-                        </div>
-
-                        <button type="submit" class="btn">Login</button>
-
-                        <div class="logreg-link">
-                            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
-                        </div>
-                    </form>
+        <div class="logreg-box">
+            <!-- login form -->
+            <div class="form-box login">
+                <div class="logreg-title">
+                    <h2>Login</h2>
+                    <p>Please login to use the platform</p>
                 </div>
 
-                <!-- register form -->
-                <div class="form-box register">
-                    <div class="logreg-title">
-                        <h2>Registration</h2>
-                        <p>Please provide the following to verify your identity</p>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
                     </div>
 
-                    <form action="#">
-                        <div class="input-box">
-                            <span class="icon"><i class='bx bxs-user'></i></span>
-                            <input type="text" required>
-                            <label>Full Name</label>
-                        </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
 
-                        <div class="input-box">
-                            <span class="icon"><i class='bx bxs-envelope'></i></span>
-                            <input type="email" required>
-                            <label>Email</label>
-                        </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
 
-                        <div class="input-box">
-                            <span class="icon"><i class='bx bxs-lock-alt'></i></span>
-                            <input type="password" required>
-                            <label>Password</label>
-                        </div>
+                    <button type="submit" class="btn">Login</button>
 
-                        <div class="remember-forgot">
-                            <label><input type="checkbox"> I agree to the terms & conditions</label>
-                        </div>
-
-                        <button type="submit" class="btn">Register</button>
-
-                        <div class="logreg-link">
-                            <p>Already have an account? <a href="#" class="login-link">Login</a></p>
-                        </div>
-                    </form>
-                </div>
+                    <div class="logreg-link">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
             </div>
 
-            
+            <!-- register form -->
+            <div class="form-box register">
+                <div class="logreg-title">
+                    <h2>Registration</h2>
+                    <p>Please provide the following to verify your identity</p>
+                </div>
+
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <input type="text" required>
+                        <label>Full Name</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> I agree to the terms & conditions</label>
+                    </div>
+
+                    <button type="submit" class="btn">Register</button>
+
+                    <div class="logreg-link">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
         </div>
-    </section>
 
-    <footer>
-        <p>This website is a result of a university group project, performed in the course <a href="https://www.ntnu.edu/studies/courses/IDATA2301#tab=omEmnet">IDATA2301 Web 
-            technologies</a>, at <a href="https://www.ntnu.edu/">NTNU</a>. All the information provided here is a result of imagination. Any 
-            resemblance with real companies or products is a coincidence.</p>
-     </footer>
 
-    <script src="script.js"></script>
+    </div>
+</section>
+
+<footer>
+    <p>This website is a result of a university group project, performed in the course <a href="https://www.ntnu.edu/studies/courses/IDATA2301#tab=omEmnet">IDATA2301 Web
+        technologies</a>, at <a href="https://www.ntnu.edu/">NTNU</a>. <br>All the information provided here is a result of imagination. Any
+        resemblance with real companies or products is a coincidence.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 
 </html>
