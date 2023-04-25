@@ -24,6 +24,17 @@ body {
     z-index: 99;
 }
 
+.container {
+    position: relative;
+}
+
+  
+  .relative {
+    position: relative;
+    text-align: center;
+    top: 6rem;
+}
+
 .logo {
     font-size: 32px;
     color: #fff;
