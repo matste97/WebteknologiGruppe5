@@ -4,7 +4,7 @@ body {
     font-family: 'Poppins', 'sans-serif';
 }
 
-.container {
+.contact-container {
     max-width: 600px;
     margin: auto;
     padding: 50px 20px;
@@ -28,7 +28,7 @@ label {
     font-weight: bold;
 }
 
-input,
+contact-input,
 textarea {
     padding: 10px;
     margin-bottom: 20px;

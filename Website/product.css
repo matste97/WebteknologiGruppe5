@@ -50,11 +50,7 @@ img{
     text-transform: uppercase;
 }
 .text-light{
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.5;
-    opacity: 0.5;
-    margin: 0.4rem 0;
+    color: black;
 }
 
 /* product section */
@@ -194,6 +190,10 @@ img{
 }
 .btn-dark:hover{
     background: var(--green);
+}
+
+.center-text{
+    text-align: center;
 }
 
 
