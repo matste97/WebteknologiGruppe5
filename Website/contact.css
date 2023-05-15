@@ -1,5 +1,6 @@
+
 body {
-    background-color: #e6c6c6;
+    background-color: white;
     font-family: 'Poppins', 'sans-serif';
 }
 
@@ -53,6 +54,6 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #e6c6c6
-    ;
+    background-color: #85E6BA;
+
 }

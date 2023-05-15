@@ -1,9 +1,9 @@
 /* adding plain color for header and all elements */
 header a{
-    color: black !important;
+    color: black;
 }
 *{
-    color: black !important;
+    color: black;
 }
 /* header, footer{
     background-color:# !important; -- Find background color that suits the page.
