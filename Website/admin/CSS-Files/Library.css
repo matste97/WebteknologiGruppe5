@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  -web-kit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* define complete site color scheme */
+  --bg-color-one: #F9E9EF;
+  --bg-color-two: #fff;
+  --bg-color-three: #DB154D;
+  --bg-color-four: #E5E7EB;
+  --bg-color-five: #f5f5f5;
+  /* define btn color */
+  --btn-color-one: green;
+  --btn-color-two: white;
+
+  /* text-color */
+  --text-color-one:  #212121;
+  --text-color-two: #a1acb8;
+  --text-color-three:   #616161;
+
+  --text-color-four: #DB154D;
+  /* define font family for the complete site */
+  --heading-font-family: 'Roboto', sans-serif;
+  --content-font-family: 'Roboto', sans-serif;
+
+  /* define custom with & height of btn */
+  --btn-width: 148px;
+  --btn-height: 48px;
+
+  /* define containers */
+  --custom-container-one: 1160px;
+  --custom-container-two: 920px;
+  --custom-container-three: 1500px;
+  /* define filters */
+  --filter-one: drop-shadow(2px -5px 11px rgba(67,89,113, 12%));
+  --filter-two: drop-shadow(10px -1px 15px rgba(72, 158, 180, 0.9));
+
+  /* define border colors */
+  --border-color-one:#CCD1DB;
+  --border-color-two: #DB154D;
+  --border-color-three:#fff;
+}
+
+body {
+  float: left;
+  width: 100%;
+  margin: 0px;
+  display: block;
+  background-color: var(--bg-color-two);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* set custom containers style */
+.custom-container-one {
+  max-width: var(--custom-container-one);
+  margin: 0 auto;
+}
+.custom-container-two {
+  max-width: var(--custom-container-two);
+  margin: 0 auto;
+}
+
