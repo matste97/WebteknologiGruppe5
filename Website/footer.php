@@ -1,4 +1,4 @@
-<footer>
+a<footer>
         <p class="mb-0 text-white">This website is a result of a university group project, performed in the course <a href="https://www.ntnu.edu/studies/courses/IDATA2301#tab=omEmnet">IDATA2301 Web
             technologies</a>, at <a href="https://www.ntnu.edu/">NTNU</a>. <br>All the information provided here is a result of imagination. Any
             resemblance with real companies or products is a coincidence.</p>
