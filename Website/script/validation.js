@@ -131,7 +131,7 @@ function onload_signup() {
                $.ajax
                 ({
                   type: "POST",
-                  url: "/sitting_plan/php_files/login.php",
+                  url: "/Website/php_files/login.php",
                   data: { "user_name": user_name,"email": email,"password": password,"LoginForm":LoginForm},
                   success:function (data) {
                    spinner.hide();
