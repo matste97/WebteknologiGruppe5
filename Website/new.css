@@ -1,13 +1,12 @@
-/* adding plain color for header and all elements */
 header a{
-    color: black;
+    color: black !important;
 }
 *{
-    color: black;
+    color: black !important;
 }
-/* header, footer{
-    background-color:# !important; -- Find background color that suits the page.
-} */
+header, footer{
+    background-color:#85E6BA !important;
+}
 
 .btn-outline-danger{
     border-color: #85E6BA !important;
@@ -44,4 +43,37 @@ header a{
 .top .card img{
     height: 200px !important;
     object-fit: contain;
+}
+
+.btn-cart{
+    color: white !important;
+}
+.pt-100{
+    padding-top: 100px !important;
+}
+
+.py-5{
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.img-fluid{
+    max-width: 100%;
+}
+.mt-5{
+    margin-top: 3rem !important;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col-md-6{
+    width: 50% !important;
+}
+
+.col-md-6{
+    width: 50% !important;
 }
