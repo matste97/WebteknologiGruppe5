@@ -24,8 +24,8 @@ if(isset($_POST['RegisterUser'])){
       }
 
 else{
-$createuser="INSERT INTO `customers`(`customer_name`, `customer_phone`, `customer_address`, `created_at`, `customer_email`, `customer_pass`) 
-VALUES ('$user_name','$phone_number','$address','$today','$email','$password')";
+$createuser="INSERT INTO `customers`(`customer_name`, `customer_phone`, `customer_address`,`created_at`, `customer_email`, `customer_pass`) 
+VALUES ('$user_name','$phone_number','$address',$today,'$email','$password')";
 $result=mysqli_query($db,$createuser);
 $response=1;
 echo $response; 

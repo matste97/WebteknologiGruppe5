@@ -36,7 +36,11 @@ function get_category($db) {
     return  $data;
 }
 function get_category_name($db, $id) {
-    $data = '';
+	$data = '';
+	if (!$id)
+	{
+		return $data;
+	}
     $query = $db->query("SELECT * FROM categories WHERE cat_id =".$id);
     
     while($temp_data = $query->fetch_assoc()){

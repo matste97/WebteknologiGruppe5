@@ -9,7 +9,7 @@ because these two pages have save section as in cart page same sections includes
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    font-family: "Inter", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 html {
     scroll-behavior: smooth;
@@ -18,7 +18,7 @@ body {
     float: left;
     width: 100%;
     margin: 0px;
-    font-family: "Inter", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .shopping_cart_total_bill_box {
     position: sticky;
@@ -60,6 +60,8 @@ body {
     gap: 10px 15px;
     align-items: center;
     padding-bottom: 35px;
+    color: black !important;
+    font-weight:400;
 }
 .shopping_cart_product_heading_left {
     display: flex;
@@ -73,7 +75,6 @@ body {
     line-height: 36px;
     text-transform: capitalize;
     color: #000000;
-    font-family: "Playfair Display", serif;
     margin: 0px;
 }
 
