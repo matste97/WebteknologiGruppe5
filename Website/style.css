@@ -8,11 +8,16 @@
 }
 
 body {
-    background: #e6c6c6;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+
 }
 
 .header {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -37,7 +42,7 @@ body {
 
 .logo {
     font-size: 32px;
-    color: black;
+    color: #fff;
     text-decoration: none;
     font-weight: 700;
     pointer-events: none;
@@ -45,7 +50,7 @@ body {
 
 .navbar a {
     font-size: 18px;
-    color: black;
+    color: #fff;
     text-decoration: none;
     font-weight: 500;
     margin-right: 40px;
@@ -81,7 +86,7 @@ body {
     border: none;
     outline: none;
     font-size: 19px;
-    color: black;
+    color: #fff;
     font-weight: 500;
     cursor: pointer;
 }
@@ -93,12 +98,13 @@ body {
     bottom: -4px;
     width: 100%;
     height: 2px;
-    background: black;
+    background: #fff;
     opacity: .85;
 }
 
 .section {
-    min-height: 15vh;/*
+    /*
+    min-height: 15vh;
     background: url('background.png') no-repeat;
     background-size: cover;
     background-position: center;
@@ -112,7 +118,7 @@ body {
     width: 450px;
     height: 100%;
     background: transparent;
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(15px);
     box-shadow: -1px 0 10px rgba(0, 0, 0, .2);
     border-left: 2px solid rgba(255, 255, 255, .1);
     z-index: 100;
@@ -127,6 +133,7 @@ body {
 .wrapper.active-popup {
     opacity: 1;
     pointer-events: auto;
+    z-index: 9999;
 }
 
 .icon-close {
@@ -135,7 +142,7 @@ body {
     right: 0;
     width: 45px;
     height: 45px;
-    background: black;
+    background: #fff;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -145,7 +152,7 @@ body {
 
 .icon-close i {
     font-size: 32px;
-    color: white;
+    color: #333;
 }
 
 .wrapper .logreg-box {
@@ -171,7 +178,7 @@ body {
 .logreg-box .logreg-title {
     text-align: center;
     margin-bottom: 40px;
-    color: black;
+    color: #fff;
 }
 
 .logreg-title h2 {
@@ -198,7 +205,7 @@ body {
     border: none;
     outline: none;
     font-size: 16px;
-    color: black;
+    color: #fff;
     font-weight: 500;
     padding-right: 25px;
 }
@@ -209,7 +216,7 @@ body {
     left: 0;
     transform: translateY(-50%);
     font-size: 16px;
-    color: black;
+    color: #fff;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -226,12 +233,12 @@ body {
     right: 0;
     transform: translateY(-50%);
     font-size: 19px;
-    color: black;
+    color: #fff;
 }
 
 .logreg-box .remember-forgot {
     font-size: 14.5px;
-    color: black;
+    color: #fff;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -239,12 +246,12 @@ body {
 }
 
 .remember-forgot label input {
-    accent-color: black;
+    accent-color: #fff;
     margin-right: 3px;
 }
 
 .remember-forgot a {
-    color: black;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -255,27 +262,27 @@ body {
 .logreg-box .btn {
     width: 100%;
     height: 45px;
-    background: black;
+    background: #fff;
     border: none;
     outline: none;
     border-radius: 40px;
-    box-shadow: 0 2px 5px white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
     cursor: pointer;
     font-size: 16px;
-    color: white;
+    color: #222;
     font-weight: 600;
 }
 
 .logreg-box .logreg-link {
     font-size: 14.5px;
-    color: black;
+    color: #fff;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 15px;
 }
 
 .logreg-link p a {
-    color: black;
+    color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
@@ -321,15 +328,241 @@ body {
 }
 
 footer {
-    position: relative;
     font-size: 12px;
-    color: black;
+    color: white;   
     opacity: 0.8;
     text-align: center;
     padding: 10px;
+    margin-top: auto;
   }
 
 footer a {
     color: inherit;
     text-decoration: underline;
   }
+  @media(max-width:768px){
+  .banner_data{
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center;
+    margin: 0px !important;
+  }
+  .banner_data .col-md-6.m-auto.p-4 {
+
+    width: 100% !important;
+}
+.row.mt-4.home_about_content{
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center;
+    margin: 0px !important;
+}
+.row.mt-4.home_about_content .col-md-6.mb-4{
+    width: 100% !important;
+}
+.about_page_content{
+    flex-direction: column;
+    align-items: center !important;
+    text-align: center;
+    display: flex;
+}
+.testamonial_main{
+    margin-bottom: 10px;
+}
+.testamonial_heading{
+    text-align: center;
+}
+  }
+  /*  */
+  ul,figure{
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  ul li{
+    list-style: none;
+}
+  .web_header{
+    display: block;
+    width: 100%;
+    background-color: #fff !important;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    margin-bottom: 30px;
+   }
+   .mobile_header{
+    display: none;
+    width: 100%;
+    background-color: #fff !important;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    margin-bottom: 30px;
+   }
+   .custom_container{
+    max-width: 1140px;
+    margin: 0px auto;
+    }
+/* web Header style start */
+.web_header_main{
+display: flex;
+flex-direction: column;
+width: 100%;
+padding: 0px 15px;
+}   
+li.li_0.web_header_logo a {
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.web_header_0{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0px;
+    align-items: center;
+    }
+    .web_header_0 ul{
+        display: flex;
+        align-items: center;
+        margin: 0px;
+    }
+    .web_header_0 .links_list li{
+       list-style: none;
+       margin-right:40px;
+    }
+
+    .web_header_0 .links_list li a{
+        text-decoration: none !important;
+        font-size: 18px;
+        font-weight: 500;
+        color: #212121;
+    }
+    .web_header_0 .cart_links_list li{
+        margin-right: 30px;
+    }
+    .web_header_0 .cart_links_list li:last-child{
+        margin-right:0px;
+     }
+    .cart_links_list li a{
+   position:relative;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 18px;
+   color: #212121;
+}
+
+p.cart_total {
+    position: absolute;
+    background: #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff !important;
+    font-size: 14px;
+    margin: 0px;
+    top: -9px;
+    right: -8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobile_cart_total{
+    position: absolute;
+    background: #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff !important;
+    font-size: 14px;
+    margin: 0px;
+    top: -9px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+/* mobile header css */
+
+.mobile_header_main{
+display: flex;
+flex-direction: column;
+width: 100%;
+padding: 0px 15px;
+}   
+.mobile_header_0{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0px;
+    align-items: center;
+    }
+    .mobile_header_0 ul{
+        display: flex;
+        align-items: center;
+    }
+    .mobile_header_0 ul li{
+       list-style: none !important;
+    }
+    
+     .mobile_header_0_list_0 li a{
+        text-decoration: none !important;
+       
+    font-size: 32px;
+    font-weight: bold;
+    }
+  
+.mobile_res_toggle_content{
+position: fixed;
+top: 0;
+left: 0;
+height: 100vh;
+transform: translatex(-100%);
+transition: transform 0.3s ease-in-out;
+z-index: 999;
+width: 250px;
+height: 100vh;
+background-color: #fff !important;
+padding: 20px 10px;
+overflow-y: scroll;
+box-shadow: 3px 3px 3px rgb(0 0 0 / 20%);
+}
+.mobile_res_toggle_content.responsive_bar{
+    transform: translatex(0%);
+}
+.mobile_res_toggle_content_cancle {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+}
+.mobile_res_toggle_list_1{
+    display: flex;
+    flex-direction: column;
+ 
+}
+.mobile_res_toggle_list_1 li{
+    list-style: none;
+    border-bottom: 1px solid #cfcfcf;
+   padding-bottom: 8px;
+   margin-bottom: 15px;
+}
+.mobile_res_toggle_list_1 li:last-child{
+    border-bottom: unset;
+}
+
+
+input:focus-visible{
+    outline: unset !important; 
+} 
+@media(max-width:991px){
+.web_header{
+    display: none;
+}
+.mobile_header{
+display: block;
+}
+}
