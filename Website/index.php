@@ -5,7 +5,8 @@ include("include/dbConfig.php");
 include("include/functions.php");
 $success = false;
 if(isset($_POST['submit_sub'])){
-    if(mysqli_query($db, "INSERT INTO submissions (sub_name, sub_phone, sub_email, sub_message) VALUES ('".$_POST['name']."', '".$_POST['phone']."', '".$_POST['email']."', '".$_POST['message']."') ")){
+    $today=date('Y-m-d');
+    if(mysqli_query($db, "INSERT INTO submissions (sub_name, sub_phone, sub_email, sub_message,sub_date) VALUES ('".$_POST['name']."', '".$_POST['phone']."', '".$_POST['email']."', '".$_POST['message']."','$today') ")){
         $success = true;
     }
 }
@@ -103,8 +104,8 @@ if(isset($_POST['submit_sub'])){
                 foreach($products as $product){
                 ?>
                     <div class="col-md-4 p-3">
-                        <div class="card position-relative">
-                            <span class="category"><?= get_category_name($db, $product['cat_id']);?></span> 
+			<div class="card position-relative">
+                           <span class="category"><?= get_category_name($db, $product['cat_id']);?></span> 
                             <img src="admin/<?=$product['product_image'];?>" class="card-img-top" alt="Product Image">
                             <div class="card-body">
                                 <p class="card-text"><small class="text-success">In Stock</small></p>

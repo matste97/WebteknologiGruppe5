@@ -102,15 +102,6 @@ body {
     opacity: .85;
 }
 
-.section {
-    /*
-    min-height: 15vh;
-    background: url('background.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-    */
-}
-
 .wrapper {
     position: absolute;
     top: 0;

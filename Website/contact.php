@@ -18,16 +18,15 @@ session_start();
 <div class="container">
     <link rel="stylesheet" href="contact.css">
     <h1>Contact Us</h1>
-    <form>
+    <form method='POST' action="index.php">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
 
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required>
-
         <label for="message">Message</label>
         <textarea id="message" name="message" required></textarea>
-
+	<input type="hidden" name="submit_sub" value="1">
         <input type="submit" value="Submit">
     </form>
 </div>
