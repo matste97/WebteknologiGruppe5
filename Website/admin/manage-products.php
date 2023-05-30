@@ -45,8 +45,9 @@ if (isset($_POST['add_product'])) {
      // this condition check if image move to the folder then its insert product in database
     if (move_uploaded_file($image_temp, "$image_name")) {
 
-
-      $query = "INSERT INTO `products`(`product_name`,`product_desc`, `product_price`, `product_image`,`created_at`) VALUES ('" . $_POST['name'] . "', '" . $_POST['desc'] . "', '" . $_POST['price'] . "', '" . $image_name . "', '" . date('Y-m-d h:i:s') . "')";
+	    $name = str_replace("'","",$_POST["name"]);
+	    $descrip = str_replace("'","",$_POST["desc"]);
+      $query = "INSERT INTO `products`(`product_name`,`product_desc`, `product_price`, `product_image`,`created_at`) VALUES ('" . $name . "', '" . $descrip . "', '" . $_POST['price'] . "', '" . $image_name . "', '" . date('Y-m-d h:i:s') . "')";
     //   echo $query;
 
       if (mysqli_query($db, $query)) {

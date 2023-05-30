@@ -34,6 +34,10 @@ function get_category($cat_id, $db){
     }
     return $category;
 }
+function get_home_products($db){
+    $products = $db->query("SELECT * FROM products");
+    return $products;
+}
 function get_country_data($country_key, $getter, $db){
     $query = $db->query("SELECT * FROM countries WHERE country_keyword = '".$country_key."' LIMIT 1");
     while($data = $query->fetch_assoc()){

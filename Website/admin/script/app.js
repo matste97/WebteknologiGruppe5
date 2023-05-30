@@ -1,15 +1,15 @@
 $(document).ready(function() {
 
-    $('#record_data_tabel').DataTable({
-    lengthMenu: [
-        [2, 10, 50, -1],
-        [2, 10, 50, 200 , 'All'],
-    ],
+  $('#record_data_tabel').DataTable({
+  lengthMenu: [
+      [2, 10, 50, -1],
+      [2, 10, 50, 200 , 'All'],
+  ],
 });
 
 oTable = $('#record_data_tabel').DataTable();  
 $('#custom_datatable_search_field').keyup(function(){
-      oTable.search($(this).val()).draw() ;
+    oTable.search($(this).val()).draw() ;
 });
 
 
@@ -36,9 +36,9 @@ $('#custom_datatable_search_field').keyup(function(){
 //     });
 // });
 
-  $(".hamburger_img").click(function () {
-    $(".dashboard-sidebar").toggleClass("active");
-    $(".content-section").toggleClass("active");
-  });
+$(".hamburger_img").click(function () {
+  $(".dashboard-sidebar").toggleClass("active");
+  $(".content-section").toggleClass("active");
+});
 
 });
