@@ -13,11 +13,18 @@ The website is up and running [here.](https://cyberpunk.viddy.cc)
 
 ### Installation guide
 1. Clone the GitHub repository to your own computer
-3. Install XAMPP
-4. place the website folder inside C:/xampp/htdocs/
-5. Start Apache and MySQL server in XAMPP
-6. Go to localhost/phpmyadmin
-7. Create new database called cyberpunkgaming
-8. Press import button and choose the cyberpunk_db.sql file  in file to import.
-9. Then you can find the website at localhost/(the name of the folder you placed in htdocs)
+2. Install XAMPP
+3. place the website folder inside C:/xampp/htdocs/
+4. Start Apache and MySQL server in XAMPP
+5. Go to localhost/phpmyadmin
+6. Create new database called cyberpunkgaming
+7. Press import button and choose the cyberpunk_db.sql file  in file to import.
+8. Then you can find the website at localhost/(the name of the folder you placed in htdocs)
 
+### Accessing and using the Admin page
+1. Go to https://cyberpunk.viddy.cc/login.php or https://cyberpunk.viddy.cc/admin
+2. Log in using the email admin@gmail.com and the password: 12345678
+3.
+4.
+5.
+6.
