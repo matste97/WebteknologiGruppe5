@@ -21,10 +21,6 @@ The website is up and running [here.](https://cyberpunk.viddy.cc)
 7. Press import button and choose the cyberpunk_db.sql file  in file to import.
 8. Then you can find the website at localhost/(the name of the folder you placed in htdocs)
 
-### Accessing and using the Admin page
+### Accessing the Admin page
 1. Go to https://cyberpunk.viddy.cc/login.php or https://cyberpunk.viddy.cc/admin
 2. Log in using the email admin@gmail.com and the password: 12345678
-3.
-4.
-5.
-6.
